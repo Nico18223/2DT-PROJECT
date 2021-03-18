@@ -10,5 +10,5 @@ def slowprint(string):
     #The time between each letter being printed
 		time.sleep(0.4/10)
 
-slowprint("Yay, it works")
+#slowprint("Yay, it works")
 
