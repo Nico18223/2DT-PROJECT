@@ -9,6 +9,6 @@ def slowprint(string):
 		sys.stdout.flush()
     #The time between each letter being printed
 		time.sleep(0.4/10)
-
+#comment
 #slowprint("Yay, it works")
 
