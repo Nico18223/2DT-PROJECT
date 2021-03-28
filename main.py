@@ -15,14 +15,25 @@ def slowprint(string):
 #fpoint stands for friendship_points
 f_point = 0
 
-
-#def countdown():
-    #print("Game over")
-
+def countdown():
+   slowprint("\nHello World")
+ 
 # duration is in seconds
-#t = Timer(1 * 10, countdown)
-#t.start()
-
+t = Timer(5, countdown)
+t.start()
 # wait for time completion
-#t.join()
+
+
+inpt = input("A: ")
+if inpt == "a":
+  t.cancel()
+ 
+elif inpt == "b":
+  t.cancel()
+  slowprint("Hello")
+
+else:
+  print("")
+  t.join()
+
 
