@@ -37,23 +37,40 @@ f_point = 0
   #t.join()
 
 #game actually starts
-
-slowprint("WELCOME TO [GAME]")
-slowprint("WOULD YOU LIKE TO START?")
+print(" ")
+print("[WARNING: THE FOLLOWING GAME INCLUDES MENTIONS OF SUICIDE AND/OR SELF HARM]")
+print("[IF THIS MAKES YOU UNCOMFORTABLE PLEASE PROCEED WITH CAUTION]")
+print(" ")
+slowprint("[WELCOME TO [GAME]]")
+slowprint("[WOULD YOU LIKE TO START?]")
 flag = False
-
+def pronoun():
+  print("[YOU]:", end="", flush = True)
 while flag == False:
-  slowprint("PLEASE INPUT YES OR NO: ")
+  slowprint("[PLEASE INPUT YES OR NO]")
   start = input().upper()
 
   if start == "YES":
     slowprint("")
     flag = True
     
+
     slowprint("A call is coming through")
     slowprint("You answer it")
     print("*CLICK*")
-    inpt0 = input("")
+    print(" ")
+    slowprint("[NOW YOU HAVE A CHOICE]")
+    slowprint("[INPUT THE CORRESPONDING LETTER]")
+    slowprint("A: CASUAL")
+    slowprint("B: POLITE")
+    slowprint("C: STAY SILENT")
+    inpt0 = input("").upper()
+    if inpt0 == "A":
+      pronoun()
+      slowprint(" 'Hello' ")
+
+
+
 
   elif start == "NO":
     flag = True
