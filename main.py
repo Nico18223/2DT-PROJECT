@@ -43,8 +43,8 @@ slowprint("WOULD YOU LIKE TO START?")
 flag = False
 
 while flag == False:
-  start = input(slowprint("PLEASE INPUT YES OR NO: ")).upper()
-
+  slowprint("PLEASE INPUT YES OR NO: ")
+  start = input().upper()
 
   if start == "YES":
     slowprint("")
@@ -57,6 +57,8 @@ while flag == False:
 
   elif start == "NO":
     flag = True
+    break
 
   else:
     flag = False
+    
