@@ -79,9 +79,27 @@ def c1():
    endcard()
 
 def c2():
-  slowprint("*CLICK*")
+  print("*CLICK*")
   slowprint("[THEY HUNG UP]")
   endcard()
+
+def c4():
+  pronoun1()
+  slowprint('"I don- I\'m sorry"')
+  print("*CLICK*")
+  slowprint("[THEY HUNG UP]")
+  endcard()
+
+def c5():
+  slowprint("[YOU SAY NOTHING]")
+  pronoun1()
+  slowerprint('"I\'v alr-dy done it anyw-y"')
+  pronoun1()
+  slowerprint('"th-nk you f\'r your tim- "')
+  slowprint("[YOU HEAR A LITTLE BIT OF MUFFLED SHUFFLING]")
+  slowerprint("...")
+  c2()
+
 
 # duration is in seconds
 #t = Timer(5, countdown)
@@ -175,7 +193,7 @@ while flag == False:
             pronoun1()
             slowprint('"Oh"')
             avgprint("[THEIR VOICE IS SHAKING]")
-            avgprint("[THEY'RE BREATHING IS PICKING UP]")
+            avgprint("[THEIR BREATHING IS PICKING UP]")
             avgprint("[THEY'RE ABOUT TO HANG UP]")
             print(" ")
 
@@ -191,7 +209,7 @@ while flag == False:
             if inpt1 == "A":
               t2.cancel()
               pronoun()
-              fastprint('"So what\'d you call for?"')
+              slowprint('"So what\'d you call for?"')
               f_point =- 1
               pronoun1()
               slowprint('"I don\'t know"')
@@ -209,16 +227,123 @@ while flag == False:
               print(" ")
               if inpt2 == "A":
                 t3.cancel()
+                f_point =- 2
                 pronoun()
                 slowprint('"Really? There must\'ve been a reason"')
                 pronoun1()
                 slowprint('"I-I just, I don\'t-"')
+                print(" ")
                 slowprint("A: PUSH")
                 slowprint("B: APOLOGISE")
+
+                t4 = Timer(3,c4)
+                t4.start()
+                print(" ")
+                inpt3 = input(" ").upper()
+                print(" ")
+
+                if inpt3 == "A":
+                  t4.cancel()
+                  pronoun()
+                  slowprint('"C\'mon, there has to be a reason"')
+                  pronoun()
+                  slowprint('"I can\'t help you unless I know what the problem is"')
+                  pronoun1()
+                  slowprint('"N-no, I-It\'s too late for you to help m-me, any-anyways"')
+                  pronoun1()
+                  slowprint('"I-I\'m sorry for the incon-inconvenience"')
+
+                  c2()
+
+                elif inpt3 == "B":
+                  t4.cancel
+                  pronoun()
+                  slowprint('"I\'m sorry for pushing, I didn\'t mean to stress you out"')
+                  pronoun1()
+                  slowprint('"N-no, I over- overre -reaacted"')
+                  slowprint("[YOU HEAR A SHAKEY EXHALE DOWN THE LINE]")
+                  pronoun1()
+                  slowprint('"I reco-recommended thi-this helpline to-to a friend a wh-while ba-ck"')
+                  pronoun1()
+                  slowprint('"It, did\'nt help hi-him, though, s-so I don\'t know why I expect m-me to be diff-iferent"')
+                  print(" ")
+
+                  slowprint("A: COLD")
+                  slowprint("B: WARM")
+                  t5 = Timer(3, c3)
+                  t5.start()
+                  print(" ")
+                  inpt4 = input(" ").upper()
+                  print(" ")
+                  
+                  if inpt4 == "A":
+                    t4.cancel()
+                    f_point =- 1
+                    print("not done yet")
+                  
+                  elif inpt4 == "B":
+                    f_point =+ 1
+                    pronoun()
+                    slowprint('"Well, I, for one, am glad that you decided to call"')
+                    pronoun()
+                    slowprint('"It was very brave of you"')
+                    pronoun1()
+                    slowprint("......")
+                    slowprint("[A HICCUP COMES FROM THE RECIEVER]")
+                    pronoun1()
+                    slowerprint('"I-I\'m not brave"')
+                    pronoun1()
+                    slowerprint('"I\'m a coward"')
+                    slowprint("[THEIR VOICE SOUNDS SLURRED]")
+                    slowprint("[YOU FEEL AS THOUGH SOMETHING IS VERY WRONG HERE]")
+                    pronoun1()
+                    slowerprint('"I don\'t \'ow why I both-rd"')
+                    slowprint("[IT'S BECOMING MORE DIFFICULT TO HEAR THEM]")
+
+                    print(' ')
+                    slowprint("A: URGENT")
+                    slowprint("B: GENTLE")
+                    print(' ')
+
+                    t6 = Timer(5,c5)
+                    t6.start()
+                    inpt5 = input(" ").upper()
+
+                    print(" ")
+                    if inpt5 == "A":
+                      t5.cancel()
+                      pronoun()
+                      slowprint('"What do you mean by that?"')
+
+                    elif inpt5 == "B":
+                      t5.cancel()
+                      print("not done yet")
+
+                    else:
+                      t5.join()
+
+
+                
+                else:
+                  t4.join()
+
+              elif inpt2 == "B":
+                t3.cancel()
+                f_point =+ 1
+                print("not done yet")
+              elif inpt2 == "C":
+                f_point =+ 1
+                t3.cancel()
+                print("not done yet")
+              else:
+                t3.cancel
+                end0()
+
         
 
             elif inpt1 == "B":
               t2.cancel()
+              print("not done yet")
             
             else:
               pronoun()
@@ -265,7 +390,9 @@ while flag == False:
           t1 = Timer(10, c1)
           t1.start()
 
+          print(" ")
           reply = input(" ").upper()
+          print(" ")
 
           if reply == "A":
             t1.cancel()
