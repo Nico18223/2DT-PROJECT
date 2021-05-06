@@ -55,6 +55,14 @@ def endcard():
   slowerprint("[IN AN AUSTRALIAN STUDY, 135 MENTAL HEALTH WORKERS WERE SURVEYED]".center(100))
   slowerprint("[70.4% OF THEM SAID THAT THEY HAD EXPERIENCED A CLIENT SUICIDE SOMETIME IN THEIR CAREER]".center(93))
 
+def endcard1():
+  slowerprint("[YOU LOST]".center(100))
+  slowerprint("[BUT IT'S A GOOD THING, THAT THIS WAS JUST A GAME]".center(100))
+  slowerprint("[CAN YOU IMAGINE THE WEIGHT ON YOUR SHOULDERS, IF THIS WAS REAL?]".center(100))
+  slowerprint("[BECAUSE FOR SOME PEOPLE IT IS]".center(100))
+  slowerprint("[IN AN AUSTRALIAN STUDY, 135 MENTAL HEALTH WORKERS WERE SURVEYED]".center(100))
+  slowerprint("[70.4% OF THEM SAID THAT THEY HAD EXPERIENCED A CLIENT SUICIDE SOMETIME IN THEIR CAREER]".center(93))
+
 def end0():
   slowprint("\n[YOU SAY NOTHING]")
   pronoun1()
@@ -100,7 +108,26 @@ def c5():
   slowerprint("...")
   c2()
 
+def c6():
+  slowprint("[YOU SAY NOTHING]")
+  pronoun1()
+  slowprint('"\'m s-rry"')
+  slowprint("[THERE'S FUMBLING ON THE OTHER SIDE OF THE LINE, BUT THEY DO NOT HANG UP]")
+  slowerprint("......")
+  slowprint("[YOU HEAR A *THUMP*]")
+  slowprint("[THERE IS NO MORE SOUND] ")
+  slowprint("[YOU STAY ON THE LINE FOR A FEW MORE MINUTES]")
+  slowerprint("......")
+  slowprint("[THERE'S ANOTHER CALL COMING THROUGH]")
+  slowprint("*Click*")
+  slowprint("[YOU'VE HUNG UP]")
+  endcard1()
 
+def c7():
+  slowprint("[YOU SAY NOTHING]")
+  print("*CLICK*")
+  slowprint("[THEY HUNG UP]")
+  endcard()
 # duration is in seconds
 #t = Timer(5, countdown)
 #t.start()
@@ -313,7 +340,87 @@ while flag == False:
                     if inpt5 == "A":
                       t5.cancel()
                       pronoun()
-                      slowprint('"What do you mean by that?"')
+                      avgprint('"What do you mean by that?"')
+
+                      if f_point >= 5:
+                        pronoun1()
+                        slowerprint('"I\'ve alr\'dy d-ne i\'"')
+                        slowprint("[IT IS GETTING INCREASINGLY DIFFICULT TO UNDERSTAND THEM]")
+                        print(" ")
+                        slowprint("A: PANIC")
+                        slowprint("B: CALM")
+                        print(" ")
+                        inpt6 = input(" ").upper()
+                        print(" ")
+
+                        t7 = Timer(5,c6)
+                        t7.start()
+
+                        if inpt6 == "A":
+                          t7.cancel()
+                          pronoun()
+                          avgprint('"What? What did you do?"')
+                          pronoun1()
+                          slowerprint('"\'m s-rry, I d\'n w-na w-rry any\'un"')
+                          pronoun1()
+                          slowerprint('"M\'by- sh\'d go"')
+
+                          print(" ")
+                          slowprint("A: INTERVENE")
+                          print(" ")
+
+                          inpt7 = input(" ").upper()
+                          
+                          t8 = Timer(3,c7)
+                          t8.start()
+                          print(" ")
+                          if inpt7 == "A":
+                            pronoun()
+                            avgprint('"Wai-"')
+                            c2()
+                          else:
+                            t8.join()
+
+
+                        elif inpt6 == "B":
+                          t7.cancel()
+                          pronoun1()
+                          slowerprint("a\'r-dy took the p\'lls, \'m die anyw\'y")
+
+                          print(" ")
+                          slowprint("A: WHAT?")
+                          slowprint("B: WHERE?")
+                          print(" ")
+
+                          inpt8 = input(" ").upper()
+                          print(" ")
+                          if inpt8 == "A":
+                            pronoun()
+                            slowprint('"Okay, can you tell me what you took?"')
+                            pronoun1()
+                            slowerprint('"P\'rce\'mol"')
+                            pronoun()
+                            avgprint('"Okay, okay, paracetamol?"')
+                            pronoun1()
+                            slowerprint('"mhm"')
+
+                            print(" ")
+                            slowprint("A: Why?")
+                            slowprint("B: Where?")
+                            print(" ")
+
+                            inpt9 = input(" ").upper()
+
+
+                            
+
+
+                        else:
+                          t7.join()
+
+                      else:
+                        t6.join()
+
 
                     elif inpt5 == "B":
                       t5.cancel()
