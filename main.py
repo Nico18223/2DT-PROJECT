@@ -54,14 +54,30 @@ def endcard():
   slowerprint("[BECAUSE FOR SOME PEOPLE IT IS]".center(100))
   slowerprint("[IN AN AUSTRALIAN STUDY, 135 MENTAL HEALTH WORKERS WERE SURVEYED]".center(100))
   slowerprint("[70.4% OF THEM SAID THAT THEY HAD EXPERIENCED A CLIENT SUICIDE SOMETIME IN THEIR CAREER]".center(93))
+  slowerprint("[SUICIDE AFFECTS EVERYONE INVOLVED]".center(100))
+  slowerprint("[IF YOU OR SOMEONE YOU KNOW IS STRUGGLING, PLEASE SEEK HELP]".center(100))
 
 def endcard1():
   slowerprint("[YOU LOST]".center(100))
-  slowerprint("[BUT IT'S A GOOD THING, THAT THIS WAS JUST A GAME]".center(100))
+  slowerprint("[BUT IT'S A GOOD THING THAT THIS WAS JUST A GAME]".center(100))
   slowerprint("[CAN YOU IMAGINE THE WEIGHT ON YOUR SHOULDERS, IF THIS WAS REAL?]".center(100))
   slowerprint("[BECAUSE FOR SOME PEOPLE IT IS]".center(100))
   slowerprint("[IN AN AUSTRALIAN STUDY, 135 MENTAL HEALTH WORKERS WERE SURVEYED]".center(100))
   slowerprint("[70.4% OF THEM SAID THAT THEY HAD EXPERIENCED A CLIENT SUICIDE SOMETIME IN THEIR CAREER]".center(93))
+  slowerprint("[SUICIDE AFFECTS EVERYONE INVOLVED]".center(100))
+  slowerprint("[IF YOU OR SOMEONE YOU KNOW IS STRUGGLING, PLEASE SEEK HELP]".center(100))
+
+def endcard2():
+  slowerprint("[GAME OVER]".center(100))
+  slowerprint("[YOU TRIED YOUR BEST]".center(100))
+  slowerprint("[BUT YOU CAN'T SAVE EVERYONE]".center(100))
+  slowerprint("[MEDICAL PROFFESIONALS, FIREFIGHTERS, AND HELPLINE WORKERS]".center(100))
+  slowerprint("[LIKE THE ONE YOU JUST PLAYED AS, KNOW THIS FAR TOO WELL]".center(100))
+  slowerprint("[IN AN AUSTRALIAN STUDY, 135 MENTAL HEALTH WORKERS WERE SURVEYED]".center(100))
+  slowerprint("[70.4% OF THEM SAID THAT THEY HAD EXPERIENCED A CLIENT SUICIDE SOMETIME IN THEIR CAREER]".center(93))
+  slowerprint("[SUICIDE AFFECTS EVERYONE INVOLVED]".center(100))
+  slowerprint("[IF YOU OR SOMEONE YOU KNOW IS STRUGGLING, PLEASE SEEK HELP]".center(100))
+
 
 def end0():
   slowprint("\n[YOU SAY NOTHING]")
@@ -128,6 +144,19 @@ def c7():
   print("*CLICK*")
   slowprint("[THEY HUNG UP]")
   endcard()
+
+def c8():
+  slowprint("[YOU SAY NOTHING]")
+  slowprint("[THERE IS NO SOUND ON THE OTHER SIDE OF THE LINE]")
+  slowprint("[THEY DON'T HANG UP, EITHER]")
+  slowerprint("......")
+  slowerprint(".........")
+  slowprint("*Beep*")
+  slowprint("[ANOTHER CALL IS COMING THROUGH]")
+  slowprint("[YOU HANG UP]")
+  endcard1()
+
+
 # duration is in seconds
 #t = Timer(5, countdown)
 #t.start()
@@ -405,11 +434,130 @@ while flag == False:
                             slowerprint('"mhm"')
 
                             print(" ")
-                            slowprint("A: Why?")
-                            slowprint("B: Where?")
+                            slowprint("A: WHY?")
+                            slowprint("B: WHERE?")
+                            print(" ")
+                            
+                            t9 = Timer(8,c8)
+                            t9.start()
+                            inpt9 = input(" ").upper()
                             print(" ")
 
-                            inpt9 = input(" ").upper()
+                            if inpt9 == "A":
+                              t9.cancel()
+                              pronoun()
+                              slowprint('"But... Why? What made you do this?"')
+                              pronoun1()
+                              slowprint('"Mh.. hur\'z."')
+                              pronoun()
+                              slowprint('"Hey kid, stay awake, yeah?"')
+                              pronoun1()
+                              slowerprint('"..."')
+                              slowprint("[THERE IS NO ANSWER]")
+                              print(" ")
+                              slowprint("A: WHERE?")
+                              t10 = Timer(8, c8)
+                              t10.start()
+                              print(" ")
+                              inpt10 = input(" ").upper()
+                              print(" ")
+                              if inpt10 == "A":
+                                t10.cancel()
+                                pronoun()
+                                slowprint('"Can you tell me where you are?"')
+                                pronoun1()
+                                slowerprint('"..."')
+                                pronoun()
+                                slowprint('"Kid?"')
+                                slowprint("[THERE IS NO ANSWER]")
+                                print(" ")
+                                slowprint("A: ?")
+                                print(" ")
+                                t11 = Timer(8, c8)
+                                inpt11 = input(" ").upper()
+                                print(" ")
+                                if inpt11 == "A":
+                                  t11.cancel()
+                                  pronoun()
+                                  slowprint('"Kid?"')
+                                  pronoun1()
+                                  slowerprint('"..."')
+                                  print(" ")
+                                  slowprint("A: ?")
+                                  print()
+                                  t12 = Timer(8,c8)
+                                  t12.start()
+                                  inpt12 = input(" ").upper()
+                                  print(" ")
+                                  if inpt12 == "A":
+                                    t12.cancel()
+                                    pronoun()
+                                    slowerprint('"Are you still there? Can you tell me where you are?"')
+                                    pronoun1()
+                                    slowerprint("...")
+                                    slowprint("[THERE IS NO ANSWER]")
+                                    print(" ")
+                                    slowprint("A: PANIC")
+                                    slowprint("B: LISTEN")
+                                    print(" ")
+                                    t13 = Timer(8,c8)
+                                    t13.start()
+                                    inpt13 = input(" ").upper()
+                                    print(" ")
+                                    if inpt13 == "A":
+                                      t13.cancel()
+                                      slowprint("[YOU FEEL PANIC RISE IN YOUR CHEST]")
+                                      pronoun()
+                                      avgprint('"Hey? Kid! Kid, answer me!"')
+                                      pronoun1()
+                                      slowerprint('"......"')
+                                      slowprint("[NOBODY ANSWERS]")
+                                      endcard2()
+                                    elif inpt13 == "B":
+                                      t13.cancel()
+                                      slowprint("[YOU HOLD YOUR BREATH AND LISTEN]")
+                                      slowerprint("...")
+                                      slowprint("[YOU DON'T HEAR ANYTHING FROM THE RECIEVER]")
+                                      slowerprint("....")
+                                      slowprint("[YOU LISTEN A LITTLE LONGER]")
+                                      slowerprint(".....")
+                                      slowprint("[YOU HEAR NO BREATHING]")
+                                      endcard2()
+                                    else:
+                                      t13.join()
+
+
+                                  else:
+                                    t12.join()
+                                    
+                          
+                                else:
+                                  t11.join()
+                                  
+
+
+                              else:
+                                t10.join()
+
+
+                            elif inpt9 == "B":
+                              t9.cancel()
+                              pronoun()
+                              slowprint('"Can you tell me where you are right now?"')
+                              pronoun1()
+                              slowprint('"M\'m.. hu\'rz"')
+                              pronoun()
+                              slow
+
+
+                              
+                            
+                            else:
+                              t9.join()
+                         
+
+
+
 
 
                             
