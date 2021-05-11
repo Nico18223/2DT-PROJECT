@@ -474,6 +474,7 @@ while flag == False:
                                 slowprint("A: ?")
                                 print(" ")
                                 t11 = Timer(8, c8)
+                                t11.start()
                                 inpt11 = input(" ").upper()
                                 print(" ")
                                 if inpt11 == "A":
@@ -545,16 +546,347 @@ while flag == False:
                               pronoun()
                               slowprint('"Can you tell me where you are right now?"')
                               pronoun1()
-                              slowprint('"M\'m.. hu\'rz"')
+                              slowprint('"M\'m.. a\' \'ome"')
                               pronoun()
-                              slow
+                              slowprint('"Can you tell me where that is?"')
+                              slowprint("[THERE IS ONLY A INCOMPREHENSIBLE MUMBLE IN REPLY]")
+                              pronoun()
+                              slowprint('"Where do you live?"')
+                              slowprint("[YOU DON'T HEAR ANOTHER MUMBLE]")
+                              pronoun()
+                              slowprint('"Try to stay awake. Help is on it\'s way"')
+                              pronoun1()
+                              slowerprint('"..."')
+                              pronoun()
+                              slowprint('"You still there?"')
+                              slowprint("[THERE IS NO REPLY]")
+                              print(" ")
+                              slowprint("A: WHY?")
+                              print(" ")
+
+                              t14 = Timer(8,c8)
+                              t14.start()
+                              inpt14 = input(" ").upper()
+                              print(" ")
+                              if inpt14 == "A":
+                                t14.cancel()
+                                pronoun()
+                                slowprint('"Why would you do this? You\'re so young"')
+                                pronoun1()
+                                slowerprint('"..."')
+                                pronoun()
+                                slowprint('"Kid?"')
+                                slowprint("[THERE IS NO ANSWER]")
+                                print(" ")
+                                slowprint("A: ?")
+                                print(" ")
+                                t15 = Timer(8, c8)
+                                t15.start()
+                                inpt15 = input(" ").upper()
+                                print(" ")
+                                if inpt15 == "A":
+                                  t15.cancel()
+                                  pronoun()
+                                  slowprint('"Kid?"')
+                                  pronoun1()
+                                  slowerprint('"..."')
+                                  print(" ")
+                                  slowprint("A: ?")
+                                  print()
+                                  t16 = Timer(8,c8)
+                                  t16.start()
+                                  inpt12 = input(" ").upper()
+                                  print(" ")
+                                  if inpt12 == "A":
+                                    t16.cancel()
+                                    pronoun()
+                                    slowerprint('"Are you still there? Can you tell me where you are?"')
+                                    pronoun1()
+                                    slowerprint("...")
+                                    slowprint("[THERE IS NO ANSWER]")
+                                    print(" ")
+                                    slowprint("A: PANIC")
+                                    slowprint("B: LISTEN")
+                                    print(" ")
+                                    t17 = Timer(8,c8)
+                                    t17.start()
+                                    inpt13 = input(" ").upper()
+                                    print(" ")
+                                    if inpt13 == "A":
+                                      t17.cancel()
+                                      slowprint("[YOU FEEL PANIC RISE IN YOUR CHEST]")
+                                      pronoun()
+                                      avgprint('"Hey? Kid! Kid, answer me!"')
+                                      pronoun1()
+                                      slowerprint('"......"')
+                                      slowprint("[NOBODY ANSWERS]")
+                                      endcard2()
+                                    elif inpt13 == "B":
+                                      t17.cancel()
+                                      slowprint("[YOU HOLD YOUR BREATH AND LISTEN]")
+                                      slowerprint("...")
+                                      slowprint("[YOU DON'T HEAR ANYTHING FROM THE RECIEVER]")
+                                      slowerprint("....")
+                                      slowprint("[YOU LISTEN A LITTLE LONGER]")
+                                      slowerprint(".....")
+                                      slowprint("[YOU HEAR NO BREATHING]")
+                                      endcard2()
+                                    else:
+                                      t17.join()
+
+
+                                  else:
+                                    t16.join()
+                                    
+                          
+                                else:
+                                  t15.join()
+                                  
+
+
+                              else:
+                                t14.join()
 
 
                               
                             
                             else:
                               t9.join()
-                         
+
+                          elif inpt8 == "B":
+                            print(" ")
+                            pronoun()
+                            slowprint('"Can you tell me where you are right now?"')
+                            pronoun1()
+                            slowprint('"D\'n\'t... w\'nna die"')
+                            pronoun()
+                            slowprint('"You want to die?"')
+                            pronoun1()
+                            slowprint('"Mhm"')
+                            pronoun()
+                            slowprint('"You must\'ve called for a reason, though"')
+                            pronoun()
+                            slowprint('"Can you tell me where you are right now?"')
+                            print(" ")
+                            slowprint("A: WHY?")
+                            slowprint("B: WHERE?")
+                            print(" ")
+                            
+                            t18 = Timer(8,c8)
+                            t18.start()
+                            inpt18 = input(" ").upper()
+                            print(" ")
+
+                            if inpt9 == "A":
+                              t18.cancel()
+                              pronoun()
+                              slowprint('"But... Why? What made you do this?"')
+                              pronoun1()
+                              slowprint('"Mh.. hur\'z."')
+                              pronoun()
+                              slowprint('"Hey kid, stay awake, yeah?"')
+                              pronoun1()
+                              slowerprint('"..."')
+                              slowprint("[THERE IS NO ANSWER]")
+                              print(" ")
+                              slowprint("A: WHERE?")
+                              t19 = Timer(8, c8)
+                              t19.start()
+                              print(" ")
+                              inpt19 = input(" ").upper()
+                              print(" ")
+                              if inpt19 == "A":
+                                t19.cancel()
+                                pronoun()
+                                slowprint('"Can you tell me where you are?"')
+                                pronoun1()
+                                slowerprint('"..."')
+                                pronoun()
+                                slowprint('"Kid?"')
+                                slowprint("[THERE IS NO ANSWER]")
+                                print(" ")
+                                slowprint("A: ?")
+                                print(" ")
+                                t11 = Timer(8, c8)
+                                t11.start()
+                                inpt11 = input(" ").upper()
+                                print(" ")
+                                if inpt11 == "A":
+                                  t11.cancel()
+                                  pronoun()
+                                  slowprint('"Kid?"')
+                                  pronoun1()
+                                  slowerprint('"..."')
+                                  print(" ")
+                                  slowprint("A: ?")
+                                  print()
+                                  t12 = Timer(8,c8)
+                                  t12.start()
+                                  inpt12 = input(" ").upper()
+                                  print(" ")
+                                  if inpt12 == "A":
+                                    t12.cancel()
+                                    pronoun()
+                                    slowerprint('"Are you still there? Can you tell me where you are?"')
+                                    pronoun1()
+                                    slowerprint("...")
+                                    slowprint("[THERE IS NO ANSWER]")
+                                    print(" ")
+                                    slowprint("A: PANIC")
+                                    slowprint("B: LISTEN")
+                                    print(" ")
+                                    t13 = Timer(8,c8)
+                                    t13.start()
+                                    inpt13 = input(" ").upper()
+                                    print(" ")
+                                    if inpt13 == "A":
+                                      t13.cancel()
+                                      slowprint("[YOU FEEL PANIC RISE IN YOUR CHEST]")
+                                      pronoun()
+                                      avgprint('"Hey? Kid! Kid, answer me!"')
+                                      pronoun1()
+                                      slowerprint('"......"')
+                                      slowprint("[NOBODY ANSWERS]")
+                                      endcard2()
+                                    elif inpt13 == "B":
+                                      t13.cancel()
+                                      slowprint("[YOU HOLD YOUR BREATH AND LISTEN]")
+                                      slowerprint("...")
+                                      slowprint("[YOU DON'T HEAR ANYTHING FROM THE RECIEVER]")
+                                      slowerprint("....")
+                                      slowprint("[YOU LISTEN A LITTLE LONGER]")
+                                      slowerprint(".....")
+                                      slowprint("[YOU HEAR NO BREATHING]")
+                                      endcard2()
+                                    else:
+                                      t13.join()
+
+
+                                  else:
+                                    t12.join()
+                                    
+                          
+                                else:
+                                  t11.join()
+                                  
+
+
+                              else:
+                                t10.join()
+
+
+                            elif inpt9 == "B":
+                              t18.cancel()
+                              pronoun()
+                              slowprint('"Can you tell me where you are right now?"')
+                              pronoun1()
+                              slowprint('"M\'m.. a\' \'ome"')
+                              pronoun()
+                              slowprint('"Can you tell me where that is?"')
+                              slowprint("[THERE IS ONLY A INCOMPREHENSIBLE MUMBLE IN REPLY]")
+                              pronoun()
+                              slowprint('"Where do you live?"')
+                              slowprint("[YOU DON'T HEAR ANOTHER MUMBLE]")
+                              pronoun()
+                              slowprint('"Try to stay awake. Help is on it\'s way"')
+                              pronoun1()
+                              slowerprint('"..."')
+                              pronoun()
+                              slowprint('"You still there?"')
+                              slowprint("[THERE IS NO REPLY]")
+                              print(" ")
+                              slowprint("A: WHY?")
+                              print(" ")
+
+                              t14 = Timer(8,c8)
+                              t14.start()
+                              inpt14 = input(" ").upper()
+                              print(" ")
+                              if inpt14 == "A":
+                                t14.cancel()
+                                pronoun()
+                                slowprint('"Why would you do this? You\'re so young"')
+                                pronoun1()
+                                slowerprint('"..."')
+                                pronoun()
+                                slowprint('"Kid?"')
+                                slowprint("[THERE IS NO ANSWER]")
+                                print(" ")
+                                slowprint("A: ?")
+                                print(" ")
+                                t15 = Timer(8, c8)
+                                t15.start()
+                                inpt15 = input(" ").upper()
+                                print(" ")
+                                if inpt15 == "A":
+                                  t15.cancel()
+                                  pronoun()
+                                  slowprint('"Kid?"')
+                                  pronoun1()
+                                  slowerprint('"..."')
+                                  print(" ")
+                                  slowprint("A: ?")
+                                  print()
+                                  t16 = Timer(8,c8)
+                                  t16.start()
+                                  inpt12 = input(" ").upper()
+                                  print(" ")
+                                  if inpt12 == "A":
+                                    t16.cancel()
+                                    pronoun()
+                                    slowerprint('"Are you still there? Can you tell me where you are?"')
+                                    pronoun1()
+                                    slowerprint("...")
+                                    slowprint("[THERE IS NO ANSWER]")
+                                    print(" ")
+                                    slowprint("A: PANIC")
+                                    slowprint("B: LISTEN")
+                                    print(" ")
+                                    t17 = Timer(8,c8)
+                                    t17.start()
+                                    inpt13 = input(" ").upper()
+                                    print(" ")
+                                    if inpt13 == "A":
+                                      t17.cancel()
+                                      slowprint("[YOU FEEL PANIC RISE IN YOUR CHEST]")
+                                      pronoun()
+                                      avgprint('"Hey? Kid! Kid, answer me!"')
+                                      pronoun1()
+                                      slowerprint('"......"')
+                                      slowprint("[NOBODY ANSWERS]")
+                                      endcard2()
+                                    elif inpt13 == "B":
+                                      t17.cancel()
+                                      slowprint("[YOU HOLD YOUR BREATH AND LISTEN]")
+                                      slowerprint("...")
+                                      slowprint("[YOU DON'T HEAR ANYTHING FROM THE RECIEVER]")
+                                      slowerprint("....")
+                                      slowprint("[YOU LISTEN A LITTLE LONGER]")
+                                      slowerprint(".....")
+                                      slowprint("[YOU HEAR NO BREATHING]")
+                                      endcard2()
+                                    else:
+                                      t17.join()
+
+
+                                  else:
+                                    t16.join()
+                                else:
+                                  t15.join()
+                                  
+
+
+                              else:
+                                t14.join()
+
+
+                              
+                            
+                            else:
+                              t18.join()
+
+                          else:
+                            print(" ")
 
 
 
