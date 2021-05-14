@@ -356,7 +356,21 @@ while flag == False:
                   if inpt4 == "A":
                     t5.cancel()
                     f_point =- 1
-                    print("not done yet")
+                    pronoun()
+                    slowprint('"Yeah, I don\'t know why, either"')
+                    pronoun()
+                    slowprint('"Is your friend why you\'re here, then?"')
+                    pronoun1()
+                    slowprint('"N- he\'s - he-"')
+                    pronoun('"Dead? Yeah, I got that"')
+                    slowprint("[YOU HEAR A SNIFFLE]")
+                    pronoun1()
+                    slowprint('"I d\'nt know why I-I bothered"')
+                    slowprint("[THEIR VOICE IS SLURRED]")
+                    slowprint("[IS IT FROM CRYING OR...]")
+                    slowprint("[YOU FEEL AS THOUGH SOMETHING IS VERY WRONG HERE]")
+
+
                   
                   elif inpt4 == "B":
                     t5.cancel()
@@ -373,7 +387,7 @@ while flag == False:
                     pronoun1()
                     slowerprint('"I\'m a coward"')
                     slowprint("[THEIR VOICE SOUNDS SLURRED]")
-                    slowprint("[YOU FEEL AS THOUGH SOMETHING IS VERY WRONG HERE]")
+                    slowprint("[YOU FEEL AS THOUGH SOMETHING ISN'T QUITE RIGHT HERE]")
                     pronoun1()
                     slowerprint('"I don\'t \'ow why I both-rd"')
                     slowprint("[IT'S BECOMING MORE DIFFICULT TO HEAR THEM]")
@@ -2136,7 +2150,7 @@ while flag == False:
                       
 
                     else:
-                      t5.join()
+                      t6.join()
 
 
                 
