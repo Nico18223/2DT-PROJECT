@@ -231,20 +231,19 @@ while flag == False:
         slowprint("[NOW YOU HAVE A CHOICE]")
         slowprint("[INPUT THE CORRESPONDING LETTER]")
         print(" ")
-        slowprint("A: CASUAL")
-        slowprint("B: POLITE // not done")
-        slowprint("C: STAY SILENT // not done")
+        slowprint("A: GREET")
+        slowprint("B: STAY SILENT")
         print(" ")
         inpt0 = input("").upper()
 
 
         if inpt0 == "A":
-          f_point += 1
+          f_point += 2
 
           pronoun()
-          slowprint('"Heya, thank you for reaching out, my name is ' + name + '"')
+          slowprint('"Hello, thank you for reaching out, my name is ' + name + '"')
           pronoun()
-          slowprint('"What\'s up?"')
+          slowprint('"How can I help?"')
           pronoun1()
           slowprint('"H-Hello, is this the right hotline?"')
 
@@ -253,8 +252,7 @@ while flag == False:
           slowprint("[JUST LIKE IN REAL LIFE, YOU DON'T KNOW HOW MUCH TIME YOU HAVE]")
           print(" ")
           slowprint("A: POLITE")
-          slowprint("B: FRIENDLY // not done")
-          slowprint("C: PROFESSIONAL // not done")
+          slowprint("B: FRIENDLY")
           t1 = Timer(10, c1)
           t1.start()
           print(" ")
@@ -43577,22 +43575,11 @@ while flag == False:
               pronoun()
               endcard()
 
-          elif reply == "C":
-            t1.cancel()
-            pronoun()
-            slowprint('"Yes, do you need help?"')
-            f_points =- 1
 
           else:
             t1.cancel()
             end0()
             endcard()
-
-          
-
-        elif inpt0 == "B":
-          print("not done")
-
 
         else:
           end0()
