@@ -2141,7 +2141,7 @@ while flag == False:
                     pronoun()
                     slowprint('"It was very brave of you"')
                     pronoun1()
-                    slowprint("......")
+                    slowprint('"......"')
                     slowprint("[A HICCUP COMES FROM THE RECIEVER]")
                     pronoun1()
                     slowerprint('"I-I\'m not brave"')
@@ -3038,7 +3038,7 @@ while flag == False:
 
 
                     elif inpt5 == "B":
-                      t5.cancel()
+                      t6.cancel()
                       f_point += 1
                       pronoun()
                       slowprint('"Are you okay? What\s wrong?"')
